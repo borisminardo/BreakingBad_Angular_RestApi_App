@@ -1,0 +1,37 @@
+<div class="page-header">
+
+    <h2>Episodi</h2>
+</div>
+<div>
+    <table class="table table-striped" style="margin-top: 50px;">
+        <thead>
+            <th>Foto</th>
+
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of episodi">
+                <td>
+                    <h5>Titolo</h5><br>{{a.title}}
+                </td>
+                <td>
+                    <h5>Stagione</h5><br>{{a.season}}
+                </td>
+                <td>
+                    <h5>Uscita</h5><br>{{a.air_date | date:short}}
+                </td>
+                <td>
+                    <h5>Episodio</h5><br>{{a.episode}}
+                </td>
+                <td>
+                    <h5>Personaggi</h5><br>
+                    <div *ngFor=" let b of a.characters">{{b}}</div><br>
+                </td>
+
+                <br>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

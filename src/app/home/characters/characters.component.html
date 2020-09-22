@@ -1,0 +1,40 @@
+<div class="page-header">
+    <div class="container">
+        <br>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" #input placeholder="Nome personaggio.." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button"  (click)="onSearch(input.value)" >Cerca</button>
+        </form>
+        <br>
+        <h2>Personaggi</h2>
+    </div>
+</div>
+<div>
+    <table class="table table-striped" style="margin-top: 50px;">
+        <thead>
+            <th>Foto</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of copyPersonaggio">
+                <td class="w-15"><img src="{{a.img}}" width="100px" /></td>
+                <td class="w-15">
+                    <h5>Nome</h5><br>{{a.name}}
+                </td>
+                <td class="w-15">
+                    <h5>Nickname</h5><br>{{a.nickname}}
+                </td>
+                <td class="w-15">
+                    <h5>Attore</h5><br>{{a.portrayed}}
+                </td>
+                <td class="w-15">
+                    <h5>Status</h5><br>{{a.status}}
+                </td>
+                <td class="w-25"><h5>Serie</h5><br>{{a.category}}</td>
+
+                <br>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

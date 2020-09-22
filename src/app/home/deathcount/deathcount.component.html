@@ -1,0 +1,31 @@
+<div class="page-header" >
+
+    <h2>Curiosità</h2>
+</div>
+<div>
+
+    <table class="table table-striped" style="margin-top: 50px;">
+        <thead>
+  
+          
+       
+        </thead>
+        <tbody>
+            <tr >
+                <td class="w-25"><img src="{{random.img}}" width="100px"/></td>
+                <td class="w-25"><h5>Morto</h5><br>{{random.death}}</td>
+                <td class="w-25"><h5>Causa</h5><br>{{random.cause}}</td>
+                <td class="w-25"><h5>Responsabile</h5><br>{{random.responsible}}</td>
+                <td class="w-25"><h5>Ultime parole</h5><br>{{random.last_words}}</td>
+                <td class="w-25"><h5>Stagione</h5><br>{{random.season}}</td>
+                <td class="w-25"><h5>Episodio</h5><br>{{random.episode}}</td>
+                <td class="w-25"><h5>Occupazione</h5><br> <div *ngFor=" let b of random.occupation">{{b}}</div><br></td>
+                <td class="w-25"><h5>Nickname</h5><br>{{random.nickname}}</td>
+             
+                <br>
+
+            </tr>
+        
+        </tbody>
+    </table>
+</div>

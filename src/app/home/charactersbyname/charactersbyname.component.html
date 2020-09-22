@@ -1,0 +1,31 @@
+
+<div class="page-header" >
+
+    <h2>Personaggi</h2>
+</div>
+<div class="card text-white bg-success mb-3 " style="max-width: 27.6rem;">
+
+            <tr *ngFor="let a of personaggio">
+
+            <div class="card-header"><img src="{{a.img}}" width="400px"/></div>    
+            <div class="card-body">
+                <div class="card-title"><h5>Nome</h5></div>
+                <p class="card-text">{{a.name}}</p>
+                <div class="card-title"><h5>Compleanno</h5></div>
+                <p class="card-text">{{a.birthday}}</p>
+                <div class="card-title"><h5>Occupazione</h5></div>
+                <p class="card-text"><div *ngFor=" let b of a.occupation">{{b}}</div><br>
+                <div class="card-title"><h5>Nickname</h5></div>
+                <p class="card-text">{{a.nickname}}</p>
+                <div class="card-title"><h5>Attore</h5></div>
+                <p class="card-text">{{a.portrayed}}</p>
+                <div class="card-title"><h5>Status</h5></div>
+                <p class="card-text">{{a.status}}</p>
+
+                <br>
+
+       
+</div>
+            </tr>
+</div>
+<br>

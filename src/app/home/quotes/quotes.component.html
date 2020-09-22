@@ -1,0 +1,26 @@
+<div class="page-header">
+
+    <h2>Le migliori frasi</h2>
+</div>
+<div>
+
+    <table class="table table-striped" style="margin-top: 50px;">
+        <tbody>
+            <tr *ngFor="let q of citazioni">
+                <td>
+                   <br><q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921"> {{q.quote}} </q>
+                </td>
+                <td>
+                    <h5>Personaggio</h5><br>-{{q.author}}
+                </td>
+                <td>
+                    <h5>Serie</h5><br> |{{q.series}}|
+                </td>
+                <br>
+
+            </tr>
+            
+
+        </tbody>
+    </table>
+</div>
